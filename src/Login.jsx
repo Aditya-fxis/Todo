@@ -11,7 +11,6 @@ const Login = () => {
   // });
   const users = JSON.parse(localStorage.getItem("users"))
   const dispatch = useDispatch();
-  // console.log("user", users);
   const navigate = useNavigate();
   const [formData, setFormData] = useState
     ({
@@ -27,7 +26,6 @@ const Login = () => {
       e.preventDefault();
   
       const { email, password } = formData;
-  
       const user = users.find((user) => user.email === email && user.password === password);
   
       if (user) {
