@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className="navbar top-0">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          MyApp
+          MyApp1
         </Link>
         {loggedInUser ? (
           <ul className="navbar-links">
